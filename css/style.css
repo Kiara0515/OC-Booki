@@ -114,3 +114,23 @@ body {
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
+
+.container {
+    border: 3px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 30px;
+  align-items: end;
+
+}
+
+.item {
+    width: 100px;}
+
+    .container div:nth-child(Budget),
+    div:nth-child(Family-Friendly),
+    div:nth-child(Romantic),
+    div:nth-child(Our Top Picks){
+        background-color: #DEEBFF;
+    }
