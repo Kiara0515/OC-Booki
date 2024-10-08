@@ -179,3 +179,37 @@ header a:hover {
 .search-button:hover {
 	background-color: #45a049;
 }
+
+/****** Footer ***********/
+
+footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	margin-top: 60px;
+}
+
+footer ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.flex-container .column {
+	width: 33%;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.column {
+	outline: 1px solid red;
+}
