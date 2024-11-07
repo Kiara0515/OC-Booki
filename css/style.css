@@ -146,7 +146,24 @@ header a:hover {
 	display: flex;
 }
 
-.item-1 {
+.filters li {
+	border-radius: 25px;
+	padding: 4px 19px;
+	border: 2px solid gray;
+}
+
+.filters {
+	list-style-type: none;
+	padding-left: 0px;
+	display: flex;
+	gap: 20px;
+}
+
+.filters .filter-label {
+	border: none;
+}
+
+/* .item-1 {
 	width: 70px;
 	height: 40px;
 	display: flex;
@@ -158,7 +175,7 @@ header a:hover {
 	padding: 20px;
 	margin: 20px;
 	align-items: center;
-}
+} */
 
 .search-bar {
 	width: 300px;
