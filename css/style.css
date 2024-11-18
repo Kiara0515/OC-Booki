@@ -186,6 +186,15 @@ header a:hover {
 	background-color: #45a049;
 }
 
+/****** Things To Do ***********/
+
+.things-to-do {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 50px;
+	margin: 15px;
+}
+
 /****** Footer ***********/
 
 footer {
