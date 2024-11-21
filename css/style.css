@@ -191,10 +191,19 @@ header a:hover {
 .things-to-do {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 50px;
-	margin: 15px;
+	gap: 30px;
+	margin: 10px;
 }
 
+.things-to-do .card img {
+	width: 100%;
+	height: auto;
+}
+
+.things-to-do p {
+	font-size: 16px;
+	font-weight: bold;
+}
 /****** Footer ***********/
 
 footer {
