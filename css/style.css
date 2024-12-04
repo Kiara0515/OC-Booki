@@ -96,6 +96,28 @@ header a:hover {
 .accommodation {
 	width: 65%;
 }
+.accommodation-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.accommodation-cards img {
+	height: auto;
+	max-width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.accommodation a {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.accommodation h2 {
+	margin-top: 0;
+}
 
 /****** Popular ***********/
 .popular {
