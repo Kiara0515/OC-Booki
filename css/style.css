@@ -119,6 +119,12 @@ header a:hover {
 	margin-top: 0;
 }
 
+@media screen and (max-width: 768px) {
+	.accommodation-cards {
+		grid-template-columns: 1fr;
+	}
+}
+
 /****** Popular ***********/
 .popular {
 	width: 32%;
@@ -166,6 +172,13 @@ header a:hover {
 
 .container {
 	display: flex;
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		justify-content: center;
+	}
 }
 
 /****** Filters ***********/
