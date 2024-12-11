@@ -103,10 +103,11 @@ header a:hover {
 }
 
 .accommodation-cards img {
-	height: auto;
-	max-width: 100%;
+	height: 124px;
+	width: 100%;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+	object-fit: cover;
 }
 
 .accommodation a {
@@ -174,10 +175,21 @@ header a:hover {
 	display: flex;
 }
 
-@media (max-width: 768px) {
-	.container {
-		flex-direction: column;
-		justify-content: center;
+@media screen and (max-width: 768px) {
+	.accommodation-and-popular {
+		flex-direction: column-reverse;
+	}
+
+	.accommodation,
+	.popular {
+		width: 100%;
+	}
+
+	section.accommodation {
+		background-color: white;
+	}
+	section.popular {
+		border-radius: 0;
 	}
 }
 
