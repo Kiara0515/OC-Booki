@@ -213,6 +213,12 @@ header a:hover {
 	border: none;
 }
 
+@media screen and (max-width: 768px) {
+	.filters {
+		flex-direction: column;
+	}
+}
+
 .search-bar {
 	width: 300px;
 	padding: 8px;
