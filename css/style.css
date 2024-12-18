@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
 	font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -206,6 +207,7 @@ header a:hover {
 	list-style-type: none;
 	padding-left: 0px;
 	display: flex;
+    flex-wrap: wrap;
 	gap: 20px;
 }
 
@@ -214,9 +216,16 @@ header a:hover {
 }
 
 @media screen and (max-width: 768px) {
-	.filters {
-		flex-direction: column;
-	}
+	
+    .filters li {
+        flex-basis: calc(50% - 10px); /* 10px is half our gap value on parent, we need to subtract this to get the correct width */
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .filters .filter-label {
+        flex-basis: 100%;
+    }
 }
 
 .search-bar {
