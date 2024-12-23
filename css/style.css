@@ -1,7 +1,7 @@
 /****** General ***********/
 * {
 	font-family: "Raleway", sans-serif;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
@@ -16,8 +16,7 @@
 }
 
 body {
-	display: flex;
-	justify-content: center;
+	margin: 0;
 }
 
 .main-container {
@@ -46,11 +45,14 @@ header ul {
 header a {
 	color: #000;
 	text-decoration: none;
+	padding-top: 15px;
+	display: inline-block;
+	border-top: 2px solid white;
 }
 
 header a:hover {
 	color: var(--main-color);
-	text-decoration: overline;
+	border-top: 2px solid var(--main-color);
 }
 .section-title {
 	margin: 0;
@@ -78,6 +80,31 @@ header a:hover {
 
 .neutralStar {
 	color: var(--main-bg-color);
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: column;
+	}
+
+	header li {
+		flex-basis: 50%;
+		text-align: center;
+	}
+
+	header ul {
+		gap: 0;
+	}
+
+	header a {
+		border-bottom: 2px solid #f2f2f2;
+		display: block;
+		padding-bottom: 15px;
+	}
+	header a:hover {
+		border-top: none;
+		border-bottom: 2px solid var(--main-bg-color);
+	}
 }
 
 /****** Accommodation And Popular ***********/
@@ -207,7 +234,7 @@ header a:hover {
 	list-style-type: none;
 	padding-left: 0px;
 	display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	gap: 20px;
 }
 
@@ -216,17 +243,20 @@ header a:hover {
 }
 
 @media screen and (max-width: 768px) {
-	
-    .filters li {
-        flex-basis: calc(50% - 10px); /* 10px is half our gap value on parent, we need to subtract this to get the correct width */
-        flex-grow: 0;
-        flex-shrink: 0;
-    }
+	.filters li {
+		flex-basis: calc(
+			50% - 10px
+		); /* 10px is half our gap value on parent, we need to subtract this to get the correct width */
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
 
-    .filters .filter-label {
-        flex-basis: 100%;
-    }
+	.filters .filter-label {
+		flex-basis: 100%;
+	}
 }
+
+/****** Search Bar ***********/
 
 .search-bar {
 	width: 300px;
@@ -239,13 +269,22 @@ header a:hover {
 	padding: 8px 16px;
 	border-radius: 20px;
 	border: none;
-	background-color: #4c6fafa2;
+	width: 132px;
+	height: 49px;
+	background-color: blue;
 	color: white;
 	cursor: pointer;
+	font-weight: bold;
 }
 
 .search-button:hover {
 	background-color: #45a049;
+}
+
+.location-icon {
+	background-color: lightgray;
+	border-right: 20px;
+	font-size: 30px;
 }
 
 /****** Things To Do ***********/
