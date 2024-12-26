@@ -258,16 +258,25 @@ header a:hover {
 
 /****** Search Bar ***********/
 
+form {
+	display: flex;
+}
 .search-bar {
 	width: 300px;
 	padding: 8px;
-	border-radius: 20px;
 	border: 2px solid #ccc;
+}
+
+.search-bar::placeholder {
+	font-weight: 700;
+	font-size: 18px;
+	color: #000;
 }
 
 .search-button {
 	padding: 8px 16px;
-	border-radius: 20px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
 	border: none;
 	width: 132px;
 	height: 49px;
@@ -285,8 +294,18 @@ header a:hover {
 	background-color: lightgray;
 	border-right: 20px;
 	font-size: 30px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+.fa-solid.fa-location-dot {
+	color: black;
+}
 /****** Things To Do ***********/
 
 .things-to-do {
