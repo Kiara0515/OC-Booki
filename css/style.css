@@ -306,6 +306,27 @@ form {
 .fa-solid.fa-location-dot {
 	color: black;
 }
+
+.fa-search {
+	display: none;
+	background-color: blue;
+	width: 49px;
+	height: 49px;
+	padding: 15px;
+	gap: 10px;
+	border-radius: 15px;
+	color: white;
+}
+
+@media screen and (max-width: 768px) {
+	.fa-search {
+		display: block;
+	}
+
+	.search-button {
+		display: none;
+	}
+}
 /****** Things To Do ***********/
 
 .things-to-do {
