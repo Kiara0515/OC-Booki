@@ -25,6 +25,19 @@ body {
 	box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+	.main-container {
+		padding: 0;
+	}
+
+	.search-properties,
+	.info,
+	.things-to-do {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
 /****** Header ***********/
 
 header {
@@ -342,7 +355,7 @@ form {
 }
 /****** Things To Do ***********/
 
-.things-to-do {
+.card-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 30px;
@@ -362,7 +375,7 @@ form {
 }
 
 @media screen and (max-width: 768px) {
-	.things-to-do {
+	.card-container {
 		grid-template-columns: 1fr;
 	}
 }
