@@ -120,8 +120,8 @@ header a:hover {
 		padding-bottom: 15px;
 	}
 	header a:hover {
-		border-top: none;
-		border-bottom: 2px solid blue;
+		border-top: 2px solid white;
+		border-bottom: 2px solid var(--main-color);
 	}
 
 	header img {
@@ -187,6 +187,11 @@ header a:hover {
 	align-items: center;
 }
 
+.popular-cards {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
 .popular-cards .card {
 	display: flex;
 	margin-top: 33px;
@@ -225,6 +230,24 @@ header a:hover {
 	display: flex;
 }
 
+@media screen and (max-width: 1024px) {
+	.accommodation-and-popular {
+		flex-direction: column;
+	}
+	.accommodation,
+	.popular {
+		width: 100%;
+	}
+	.accommodation {
+		margin-bottom: 50px;
+	}
+
+	.popular-cards {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.accommodation-and-popular {
 		flex-direction: column-reverse;
@@ -240,6 +263,10 @@ header a:hover {
 	}
 	section.popular {
 		border-radius: 0;
+	}
+
+	.popular-cards {
+		grid-template-columns: 1fr;
 	}
 }
 
