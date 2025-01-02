@@ -121,7 +121,7 @@ header a:hover {
 	}
 	header a:hover {
 		border-top: none;
-		border-bottom: 2px solid var(--main-bg-color);
+		border-bottom: 2px solid blue;
 	}
 
 	header img {
